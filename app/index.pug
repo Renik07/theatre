@@ -7,13 +7,31 @@ html(lang="ru")
 		link(rel="stylesheet", href="css/style.css")
 		title 12345
 	body 
-		.wrapper 
-			.full-screen 
-				.full-screen__body.container 
-					.full-screen__title TITLEfdsfs
-				video.full-screen__video(preload="auto", autoplay, muted, loop)
-					source(src="video/theatre.webm", type="video/webm") 
-					source(src="video/theatre.mp4", type="video/mp4") 
+		.full-screen
+			.full-screen__body.container 
+				.full-screen__top-line 
+					nav.full-screen__nav 
+						ul.full-screen__list 
+							li.full-screen__item
+								a.full-screen__link(href="#") Главная
+							li.full-screen__item
+								a.full-screen__link(href="#") О театре
+							li.full-screen__item
+								a.full-screen__link(href="#") Наши постановки
+							li.full-screen__item
+								a.full-screen__link(href="#") Партнеры театра
+							li.full-screen__item
+								a.full-screen__link(href="#") Контакты
+					a.full-screen__phone(href="tel:+74951234567") +7 495 123-45-67
+				.full-screen__content 
+					.full-screen__text 
+						h1.full-screen__title Большой театр
+						p.full-screen__descr Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.
+						a.full-screen__btn.btn(href="#") Афиша
+					.full-screen__slider.slider
+			video.full-screen__video(preload="auto", autoplay, muted, loop)
+				source(src="video/theatre.webm", type="video/webm") 
+				source(src="video/theatre.mp4", type="video/mp4") 
 
 
 

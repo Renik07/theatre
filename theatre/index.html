@@ -8,16 +8,31 @@
     <title>12345</title>
   </head>
   <body> 
-    <div class="wrapper"> 
-      <div class="full-screen"> 
-        <div class="full-screen__body container"> 
-          <div class="full-screen__title">TITLEfdsfs</div>
+    <div class="full-screen">
+      <div class="full-screen__body container"> 
+        <div class="full-screen__top-line"> 
+          <nav class="full-screen__nav"> 
+            <ul class="full-screen__list"> 
+              <li class="full-screen__item"><a class="full-screen__link" href="#">Главная</a></li>
+              <li class="full-screen__item"><a class="full-screen__link" href="#">О театре</a></li>
+              <li class="full-screen__item"><a class="full-screen__link" href="#">Наши постановки</a></li>
+              <li class="full-screen__item"><a class="full-screen__link" href="#">Партнеры театра</a></li>
+              <li class="full-screen__item"><a class="full-screen__link" href="#">Контакты</a></li>
+            </ul>
+          </nav><a class="full-screen__phone" href="tel:+74951234567">+7 495 123-45-67</a>
         </div>
-        <video class="full-screen__video" preload="auto" autoplay muted loop>
-          <source src="video/theatre.webm" type="video/webm">
-          <source src="video/theatre.mp4" type="video/mp4">
-        </video>
+        <div class="full-screen__content"> 
+          <div class="full-screen__text"> 
+            <h1 class="full-screen__title">Большой театр</h1>
+            <p class="full-screen__descr">Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.</p><a class="full-screen__btn btn" href="#">Афиша</a>
+          </div>
+          <div class="full-screen__slider slider"></div>
+        </div>
       </div>
+      <video class="full-screen__video" preload="auto" autoplay muted loop>
+        <source src="video/theatre.webm" type="video/webm">
+        <source src="video/theatre.mp4" type="video/mp4">
+      </video>
     </div>
   </body>
   <script src="js/script.js"> </script>
