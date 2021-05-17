@@ -71,6 +71,7 @@ nav,footer,header,aside{display: block;}
 html,body{
 	font-family: 'Open Sans', sans-serif;
 	color: $color-white;
+	background-color: $color-black;
 	height: 100%;
 	width: 100%;
 	font-size: 100%;
@@ -151,7 +152,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 		justify-content: space-between;
 		flex-wrap: wrap;
 		align-items: center;
-		margin-bottom: 190px;
+		margin-bottom: 17vh;
 	}
 	&__nav {
 		width: 825px;
@@ -243,7 +244,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /* about ------------------------------- */
 .about {
 	min-height: 760px;
-	background-color: $color-black;
 	padding: 150px 0px;
 	&__body {
 
@@ -307,7 +307,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /* projects ------------------------------- */
 
 .projects {
-	background-color: $color-black;
+	&__title {
+		margin-bottom: 100px;
+	}
 	&__slider {
 		display: flex;
 		justify-content: center;
@@ -342,19 +344,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 			}
 		}
 		&--bg1 {
-			background: url("../img/projects/project_1.jpg") center center no-repeat;
+			background: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url("../img/projects/project_1.jpg") center center no-repeat;
 			background-size: cover;
 		}
 		&--bg2 {
-			background: url("../img/projects/project_2.jpg") center center no-repeat;
+			background: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url("../img/projects/project_2.jpg") center center no-repeat;
 			background-size: cover;
 		}
 		&--bg3 {
-			background: url("../img/projects/project_3.jpg") center center no-repeat;
+			background: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url("../img/projects/project_3.jpg") center center no-repeat;
 			background-size: cover;
 		}
 		&--bg4 {
-			background: url("../img/projects/project_4.jpg") center center no-repeat;
+			background: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url("../img/projects/project_4.jpg") center center no-repeat;
 			background-size: cover;
 		}
 		@media (max-width: 640px) {
@@ -365,7 +367,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 			}
 		}
 	}
-	&__title {
+	&__item-title {
 		font-family: "OpenSansCondensed";
 		font-weight: 700;
 		font-size: 24px;
@@ -384,6 +386,73 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 		transform: rotate(-90deg);
 		@media (max-width: 640px) {
 			transform: rotate(0deg);
+		}
+	}
+}
+
+/* rating ------------------------------- */
+
+.rating {
+	min-height: 850px;
+	padding: 150px 0px;
+	&__body {
+		display: flex;
+		align-items: center;
+		min-height: 550px;
+		padding: 125px 160px 125px 190px;
+		background: linear-gradient(0deg, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9)), url("../img/rating/rating_bg.jpg") center center no-repeat;
+		background-size: cover;
+	}
+	&__years {
+		flex: 0 1 180px;
+		margin-right: 100px;
+	}
+	&__year {
+		font-family: "OpenSansCondensed";
+		font-weight: 700;
+		font-size: 72px;
+		line-height: 98px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: $color-gold;
+	}
+	&__block {
+		flex: 1 1 auto;
+	}
+	&__stars {
+		width: 230px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 25px;
+		img {
+
+		}
+	}
+	&__text {
+		max-width: 475px;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 150%;
+		color: $color-white;
+	}
+}
+
+/* partners ------------------------------- */
+
+.partners {
+	margin-bottom: 120px;
+	&__body {
+		padding: 0px 38px;
+	}
+	&__title {
+		margin-bottom: 100px;
+	}
+	&__logo {
+		display: grid;
+		grid-template: auto / repeat(auto-fit,minmax(198.5px, 1fr));
+		gap: 80px;
+		img {
+			margin: auto;
 		}
 	}
 }

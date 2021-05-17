@@ -4,6 +4,7 @@ html(lang="ru")
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="icon", href="favicon32.png", type="image/png", sizes="32x32")
 		link(rel="stylesheet", href="css/style.css")
 		title Большой театр
 	body 
@@ -57,23 +58,55 @@ html(lang="ru")
 					.about__image 
 						img(src="img/about/about.jpg")
 		.projects
-			h2.about__title.title
+			h2.projects__title.title
 				span Наши 
 				| постановки
 			.projects__slider 
 				.projects__item.projects__item--bg1
-					.projects__title Оскар 2020
+					.projects__item-title Оскар 2020
 					.projects__date сентябрь 2020
 				.projects__item.projects__item--bg2
-					.projects__title Лебединое озеро
+					.projects__item-title Лебединое озеро
 					.projects__date октябрь 2020
 				.projects__item.projects__item--bg3
-					.projects__title Золотой грамофон
+					.projects__item-title Золотой грамофон
 					.projects__date июль 2020
 				.projects__item.projects__item--bg4
-					.projects__title Щелкунчик
+					.projects__item-title Щелкунчик
 					.projects__date май 2020
-
+		.rating 
+			.rating__body.container 
+				.rating__years 
+					.rating__year 2018
+					.rating__year 2019
+					.rating__year 2020
+				.rating__block 
+					.rating__stars 
+						img(src="img/icons/star.svg", alt="Рейтинг 5 звезд", width="26", height="24")
+						img(src="img/icons/star.svg", alt="Рейтинг 5 звезд", width="26", height="24")
+						img(src="img/icons/star.svg", alt="Рейтинг 5 звезд", width="26", height="24")
+						img(src="img/icons/star.svg", alt="Рейтинг 5 звезд", width="26", height="24")
+						img(src="img/icons/star.svg", alt="Рейтинг 5 звезд", width="26", height="24")
+					.rating__text Лучший театр<br> по мнению театральных критиков Парижа
+		.partners 
+			.partners__body.container 
+				h2.partners__title.title 
+					span Наши 
+					| партнеры
+				.partners__logo 
+					img(src="img/partners/gazprom.svg", alt="Компания Газпром")
+					img(src="img/partners/gazprom.svg", alt="Компания Газпром")
+					img(src="img/partners/gazprom.svg", alt="Компания Газпром")
+					img(src="img/partners/gazprom.svg", alt="Компания Газпром")
+					img(src="img/partners/gazprom.svg", alt="Компания Газпром")
+					img(src="img/partners/gazprom.svg", alt="Компания Газпром")
+					img(src="img/partners/gazprom.svg", alt="Компания Газпром")
+					img(src="img/partners/gazprom.svg", alt="Компания Газпром")
+		.contacts 
+			.contacts__body.container
+				h2.contacts__title.title 
+					span Стать 
+					| меценатом
 
 
 
